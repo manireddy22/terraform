@@ -10,3 +10,4 @@ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https:/
 
 sudo apt update -y
 sudo apt install kubeadm=1.20.0-00 kubectl=1.20.0-00 kubelet=1.20.0-00 -y
+kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
